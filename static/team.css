@@ -1,0 +1,23 @@
+section {
+    background-color: var(--navy-blue);
+    color: var(--lighter-blue);
+}
+
+section:last-of-type {
+    padding-bottom: 40px;
+}
+
+.grid.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid.team > div {
+    width: 250px;
+    height: 250px;
+    background-color: #0006;
+    border-radius: 15px;
+    margin: 7px;
+    text-align: center;
+}

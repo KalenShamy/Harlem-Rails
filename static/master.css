@@ -1,0 +1,261 @@
+/* Top Level */
+:root {
+    --navy-blue: #162a5a;
+    --lighter-blue: #d9edf7;
+    --light-blue: #5ba5d3;
+    --mid-blue: #006eb0;
+    --decaf: #3decaf;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--lighter-blue);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+*:focus-visible {
+    outline: var(--light-blue) 2px solid;
+    border-radius: 5px;
+}
+
+/* General */
+section {
+    padding-top: 40px;
+    position: relative;
+    padding-inline: 40px;
+}
+.hero {
+    background-color: var(--lighter-blue);
+    color: var(--navy-blue);
+    padding-top: 140px;
+    height: 100vh;
+}
+h2 {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2.25px;
+    line-height: 25.2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+p {
+    line-height: 1.5em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.OpacityLink {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    min-width: 250px;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none !important;
+    transition: 0.25s;
+    border: 2px solid;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid > * {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 7px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--lighter-blue);
+    color: var(--navy-blue);
+    text-align: center;
+    padding-block: 20px;
+}
+header h1 {
+    color: var(--navy-blue);
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-block: 0;
+}
+header h3 {
+    color: var(--navy-blue);
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+nav > * {
+    padding: 8px 10px;
+    margin-inline: 10px;
+    border-radius: 10px;
+}
+nav > *:hover {
+    background-color: var(--navy-blue);
+    color: var(--lighter-blue);
+    cursor: pointer;
+}
+
+/* train track */
+.rails {
+    position: relative;
+}
+header, footer {
+    position: relative;
+    overflow: hidden;
+    height: 155px;
+}
+header > *:not(.rails), footer > *:not(.rails) {
+    position: relative;
+    z-index: 1;
+}
+header .rails, footer .rails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.25;
+}
+header .rails {
+    transform: rotate(-200deg);
+}
+footer .rails {
+    transform: rotate(200deg);
+}
+.rails #rail1 {
+    background-color: var(--navy-blue);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rails #rail2 {
+    background-color: var(--navy-blue);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#tracks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#tracks .track {
+    background-color: var(--navy-blue);
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--lighter-blue);
+    color: var(--navy-blue);
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.162px;
+    line-height: 30px;
+    padding: 40px 0;
+}
+footer .container {
+    height: 100%;
+}
+footer .container > * {
+    display: block;
+    margin-block: auto;
+}
+footer #credit {
+    text-decoration: none;
+}
+footer #credit:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media screen and (max-width: 649px) {
+
+    section p {
+        text-align: justify;
+    }
+    
+    footer .container {
+        width: 100%;
+        text-align: center;
+    }
+    footer #copyright {
+        margin-top: 6.5px;
+    }
+    footer #credit {
+        margin-top: 13px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+
+    section p {
+        text-align: justify;
+    }
+
+    footer .container {
+        width: 100%;
+        text-align: center;
+    }
+    footer #copyright {
+        margin-top: 6.5px;
+    }
+    footer #credit {
+        margin-top: 13px;
+    }
+}
+
+/* Computer */
+@media screen and (min-width: 1000px) {
+    section {
+        padding-inline: 80px;
+    }
+
+    footer .container {
+        max-width: 91.5%;
+        width: 1000px;
+        margin: auto;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    #copyright {
+        max-width: 70%;
+    }
+}
