@@ -16,7 +16,11 @@
 
 
         railsTween.subscribe((v) => {
-            rails.style.transform = `translateX(${v * rails?.getBoundingClientRect().width}px)`;
+            if (v == 1) {
+                rails.style.width = `0`;
+            } else if (v == 0) {
+                rails.style.width = ``;
+            }
         });
 
         //rail1Tween.set(-100);
@@ -36,14 +40,28 @@
             }
         }
 
-        const resizeObserver = new ResizeObserver(entries => {
-        for (let entry of entries) {
-            if (entry.target === tracks) {
-            // Call your function here
-                count = Math.floor(tracks?.getBoundingClientRect().width / 40)+1;
-                createTracks();
+        const moveRails = () => {
+            if (!rails) return;
+            const scroll = window.scrollY;
+            if (scroll < 200 && lastTrack !== 0) {
+                // rails appear
+                railsTween.set(0);
+                lastTrack = 0;
+            } else if (scroll >= 200 && lastTrack !== 1) {
+                // rails disappear
+                railsTween.set(1);
+                lastTrack = 1;
             }
         }
+
+        const resizeObserver = new ResizeObserver(entries => {
+            for (let entry of entries) {
+                if (entry.target === tracks) {
+                // Call your function here
+                    count = Math.floor(tracks?.getBoundingClientRect().width / 40)+1;
+                    createTracks();
+                }
+            }
         });
 
         resizeObserver.observe(tracks);
@@ -53,19 +71,7 @@
 
         let lastTrack = 0;
 
-        window.addEventListener("scroll", () => {
-            if (!rails) return;
-            const scroll = window.scrollY;
-            if (scroll < 200 && lastTrack !== 0) {
-                //rails.style.width = "calc(100% + 400px)";
-                railsTween.set(0);
-                lastTrack = 0;
-            } else if (scroll >= 200 && lastTrack !== 1) {
-                //rails.style.width = "0";
-                railsTween.set(1);
-                lastTrack = 1;
-            }
-        });
+        window.addEventListener("scroll", moveRails);
     });
 </script>
 
