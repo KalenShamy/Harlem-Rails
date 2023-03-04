@@ -40,7 +40,7 @@
         for (let entry of entries) {
             if (entry.target === tracks) {
             // Call your function here
-                count = Math.floor(tracks?.getBoundingClientRect().width / 40);
+                count = Math.floor(tracks?.getBoundingClientRect().width / 40)+1;
                 createTracks();
             }
         }
@@ -70,6 +70,7 @@
 </script>
 
 <section class="hero">
+    <img src="images/hero_background.jpg" alt="">
     <h1>Harlem Rails</h1>
     <h3>The Columbia Secondary School FIRST Robotics Team</h3>
     <a href="team" class="OpacityLink">Meet the Team</a>
