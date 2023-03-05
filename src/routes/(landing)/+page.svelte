@@ -9,7 +9,9 @@
         message: ""
     }
 
-    let formObject: HTMLDivElement;
+    let success = false;
+
+    let formObject: HTMLFormElement;
     let formCompleted: HTMLDivElement;
 
     let inputsValid = false;
@@ -29,13 +31,33 @@
     }
 
     async function submit() {
-		fetch("/contact", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify(form)
-		});
+        if (!inputsValid) return;
+
+        const formData = new FormData(formObject);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+		fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                success = true;
+            } else {
+                console.log(response);
+                success = false;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            success = false;
+        })
         await sleep(250);
         formObject.style.transform = "translateX(100vw)";
         formCompleted.style.width = "100%";
@@ -44,7 +66,7 @@
     const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 </script>
 
-<section id="whats_first">
+<section class="img_text">
     <h2>What is the FIRST Robotics Competition?</h2>
     <div>
         <img src="images/robot_work.jpg" alt="">
@@ -76,22 +98,30 @@
 </section>
 <section id="contact">
     <h2>Get in Touch</h2>
-    <div class="form" bind:this={formObject}>
+    <form method="POST" bind:this={formObject}>
+        <input type="hidden" name="access_key" value="4bae6462-92d5-455b-b5e3-69cd052a9cc1">
+        <input type="hidden" name="subject" value="Harlem Rails Contact Form Submission">
+
         <label for="name">Name *</label>
-        <input name="name" id="name" type="text" bind:value={form.name} on:input={checkInputs}>
+        <input name="name" id="name" type="text" bind:value={form.name} on:input={checkInputs} required>
 
         <label for="email">Email *</label>
-        <input name="email" id="email" type="text" bind:value={form.email} on:input={checkInputs}>
+        <input name="email" id="email" type="text" bind:value={form.email} on:input={checkInputs} required>
 
         <label for="message">Message *</label>
-        <textarea name="message" id="message" rows=6 bind:value={form.message} on:input={checkInputs}/>
+        <textarea name="message" id="message" rows=6 bind:value={form.message} on:input={checkInputs} required/>
 
-        <button type="submit" disabled={!inputsValid} on:click={submit}>Send</button>
-    </div>
+        <button type="button" disabled={!inputsValid} on:click={submit}>Send</button>
+    </form>
     <div class="formCompleted" bind:this={formCompleted}>
         <div class="message">
-            <h1>Your message has been delivered</h1>
-            <h3>We will get back to you soon!</h3>
+            {#if success}
+                <h1>Your message has been delivered</h1>
+                <h3>We will get back to you soon!</h3>
+            {:else}
+                <h1>Oops, something went wrong</h1>
+                <h3>Please try again later</h3>
+            {/if}
         </div>
         <div class="rails">
             <div id="rail1"></div>
