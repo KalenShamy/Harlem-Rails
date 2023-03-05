@@ -73,30 +73,25 @@ section:nth-of-type(odd) .OpacityLink:hover {
 }
 
 /* whats FIRST robotics */
-#whats_first {
-    background-color: var(--navy-blue);
-    color: var(--lighter-blue);
+section.img_text {
     font-family: arial, sans-serif;
     font-weight: 400;
     letter-spacing: 2.25px;
     line-height: 25.2px;
     padding-block: 40px;
 }
-#whats_first h2 {
-    color: var(--lighter-blue);
-}
-#whats_first div {
+section.img_text div {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-#whats_first div > p {
+section.img_text div > p {
     margin: 0;
 }
-#whats_first div > * {
+section.img_text div > * {
     padding: 15px 0 15px 30px;
 }
-#whats_first div > img {
+section.img_text div > img {
     width: 60%
 }
 
@@ -236,29 +231,30 @@ section:nth-of-type(odd) .OpacityLink:hover {
 
 /* Mobile */
 @media screen and (max-width: 649px) {
-    #whats_first div {
+    section.img_text div {
         flex-direction: column;
         text-align: justify;
     }
-    #whats_first div > img {
+    section.img_text div > img {
         width: 75%;
         margin-inline: auto;
     }
-    #whats_first div > p > .OpacityLink {
+    section.img_text div > p > .OpacityLink {
         margin-inline: auto;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 650px) and (max-width: 1000px) {
-    #whats_first div {
+    section.img_text div {
         flex-direction: column;
     }
-    #whats_first div > img {
+    section.img_text div > img {
         width: 75%;
         margin-inline: auto;
+        padding-left: 0;
     }
-    #whats_first div > p > .OpacityLink {
+    section.img_text div > p > .OpacityLink {
         margin-inline: auto;
         width: 50%;
     }
