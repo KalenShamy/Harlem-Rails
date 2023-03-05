@@ -9,7 +9,7 @@
         message: ""
     }
 
-    let success = false;
+    let success: boolean | undefined = undefined;
 
     let formObject: HTMLFormElement;
     let formCompleted: HTMLDivElement;
@@ -58,7 +58,9 @@
             console.log(error);
             success = false;
         })
-        await sleep(250);
+        while (success === undefined) {
+            await sleep(50);
+        }
         formObject.style.transform = "translateX(100vw)";
         formCompleted.style.width = "100%";
 	};
