@@ -216,39 +216,3 @@ form button:not(:disabled):hover {
     margin-block: 0.25em;
     white-space: nowrap;
 }
-
-/* Mobile */
-@media screen and (max-width: 649px) {
-    .img_text div {
-        flex-direction: column;
-        text-align: justify;
-    }
-    .img_text div > img {
-        width: 75%;
-        margin-inline: auto;
-    }
-    .img_text div > p > .OpacityLink, #sponsors .OpacityLink {
-        margin-inline: auto;
-    }
-}
-
-/* Tablet */
-@media screen and (min-width: 650px) and (max-width: 1000px) {
-    .img_text div {
-        flex-direction: column;
-    }
-    .img_text div > img {
-        width: 75%;
-        margin-inline: auto;
-        padding-left: 0;
-    }
-    .img_text div > p > .OpacityLink, #sponsors .OpacityLink {
-        margin-inline: auto;
-        width: 50%;
-    }
-}
-
-/* Computer */
-@media screen and (min-width: 1000px) {
-
-}

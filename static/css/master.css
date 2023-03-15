@@ -290,6 +290,21 @@ footer #credit:hover {
     section p {
         text-align: justify;
     }
+
+    .img_text div {
+        flex-direction: column;
+        text-align: justify;
+    }
+    .img_text div > * {
+        padding: 15px 0;
+    }
+    .img_text div > img {
+        width: 75%;
+        margin-inline: auto;
+    }
+    .img_text div > p > .OpacityLink, #sponsors .OpacityLink {
+        margin-inline: auto;
+    }
     
     footer .container {
         width: 100%;
@@ -308,6 +323,22 @@ footer #credit:hover {
 
     section p {
         text-align: justify;
+    }
+
+    .img_text div {
+        flex-direction: column;
+    }
+    .img_text div > * {
+        padding: 15px 0;
+    }
+    .img_text div > img {
+        width: 75%;
+        margin-inline: auto;
+        padding-left: 0;
+    }
+    .img_text div > p > .OpacityLink, #sponsors .OpacityLink {
+        margin-inline: auto;
+        width: 50%;
     }
 
     footer .container {
