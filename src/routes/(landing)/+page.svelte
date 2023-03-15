@@ -1,5 +1,5 @@
 <svelte:head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </svelte:head>
 
 <script lang="ts">
@@ -87,6 +87,7 @@
     <h2>Meet our Sponsors</h2>
     <p>
         We are grateful for the support of our sponsors. Without them, we would not be able to compete in the FIRST Robotics Competition.
+        We are also thankful for the support of our community, who helped us raise over $5,000.
     </p>
     <div class="grid">
         <a href="https://www.bloomberg.com/company/press/bloomberg-supports-teams-first-robotics-competition/" target="_blank" rel="noreferrer">
@@ -95,8 +96,8 @@
         <a href="https://outreach.engineering.columbia.edu/content/columbias-first-robotics-team" target="_blank" rel="noreferrer">
             <img src="images/Columbia_University.png" alt="">
         </a>
-        <a href="https://www.gofundme.com/f/help-the-columbia-secondary-school-robotics-team" target="_blank"><div><h1>You!</h1><h3>(become a sponsor)</h3></div></a>
     </div>
+    <a href="outreach" class="OpacityLink">Outreach</a>
 </section>
 <section id="contact">
     <h2>Get in Touch</h2>
@@ -108,7 +109,7 @@
         <input name="name" id="name" type="text" bind:value={form.name} on:input={checkInputs} required>
 
         <label for="email">Email *</label>
-        <input name="email" id="email" type="text" bind:value={form.email} on:input={checkInputs} required>
+        <input name="email" id="email" type="email" bind:value={form.email} on:input={checkInputs} required>
 
         <label for="message">Message *</label>
         <textarea name="message" id="message" rows=6 bind:value={form.message} on:input={checkInputs} required/>

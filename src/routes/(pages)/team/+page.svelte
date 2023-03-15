@@ -1,5 +1,5 @@
 <svelte:head>
-    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="css/team.css">
 </svelte:head>
 
 <script lang="ts">
@@ -148,16 +148,36 @@
         ],
         mentors: [
             {
-                name: "Joel Roderiguez",
-                image: "images/team/Joel_Roderiguez.png"
-            },
-            {
                 name: "Reuben Bridges",
                 image: "images/team/Reuben_Bridges.png"
             },
             {
+                name: "Graeme Ferguson",
+                image: "images/team/Graeme_Ferguson.png"
+            },
+            {
+                name: "Mohith Manohar",
+                image: "images/team/Mohith_Manohar.png"
+            },
+            {
+                name: "Olivia O'Driscoll",
+                image: "images/team/Olivia_O'Driscoll.png"
+            },
+            {
+                name: "Joel Roderiguez",
+                image: "images/team/Joel_Roderiguez.png"
+            },
+            {
                 name: "Bob Stark",
                 image: "images/team/Bob_Stark.png"
+            },
+            {
+                name: "Emily Yin",
+                image: "images/team/Emily_Yin.png"
+            },
+            {
+                name: "Yuheng Zhang",
+                image: "images/team/Yuheng_Zhang.png"
             }
         ]
     }

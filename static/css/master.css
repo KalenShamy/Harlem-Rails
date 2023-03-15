@@ -1,9 +1,72 @@
 /* Top Level */
 :root {
-    --navy-blue: #162a5a;
-    --lighter-blue: #d9edf7;
-    --light-blue: #5ba5d3;
-    --mid-blue: #006eb0;
+    --navy: #162A5A;
+    --navy-1: #162A5A10;
+    --navy-2: #162A5A20;
+    --navy-3: #162A5A30;
+    --navy-4: #162A5A40;
+    --navy-5: #162A5A50;
+    --navy-6: #162A5A60;
+    --navy-7: #162A5A70;
+    --navy-8: #162A5A80;
+    --navy-9: #162A5A90;
+    --navy-10: #162A5AA0;
+    --navy-11: #162A5AB0;
+    --navy-12: #162A5AC0;
+    --navy-13: #162A5AD0;
+    --navy-14: #162A5AE0;
+    --navy-15: #162A5AF0;
+
+    --lighter-blue: #D9EDF7;
+    --lighter-blue-1: #D9EDF710;
+    --lighter-blue-2: #D9EDF720;
+    --lighter-blue-3: #D9EDF730;
+    --lighter-blue-4: #D9EDF740;
+    --lighter-blue-5: #D9EDF750;
+    --lighter-blue-6: #D9EDF760;
+    --lighter-blue-7: #D9EDF770;
+    --lighter-blue-8: #D9EDF780;
+    --lighter-blue-9: #D9EDF790;
+    --lighter-blue-10: #D9EDF7A0;
+    --lighter-blue-11: #D9EDF7B0;
+    --lighter-blue-12: #D9EDF7C0;
+    --lighter-blue-13: #D9EDF7D0;
+    --lighter-blue-14: #D9EDF7E0;
+    --lighter-blue-15: #D9EDF7F0;
+
+    --grey: #ADBCCF;
+    --grey-1: #ADBCCF10;
+    --grey-2: #ADBCCF20;
+    --grey-3: #ADBCCF30;
+    --grey-4: #ADBCCF40;
+    --grey-5: #ADBCCF50;
+    --grey-6: #ADBCCF60;
+    --grey-7: #ADBCCF70;
+    --grey-8: #ADBCCF80;
+    --grey-9: #ADBCCF90;
+    --grey-10: #ADBCCFA0;
+    --grey-11: #ADBCCFB0;
+    --grey-12: #ADBCCFC0;
+    --grey-13: #ADBCCFD0;
+    --grey-14: #ADBCCFE0;
+    --grey-15: #ADBCCFF0;
+
+    --mid-blue: #006EB0;
+    --mid-blue-1: #006EB010;
+    --mid-blue-2: #006EB020;
+    --mid-blue-3: #006EB030;
+    --mid-blue-4: #006EB040;
+    --mid-blue-5: #006EB050;
+    --mid-blue-6: #006EB060;
+    --mid-blue-7: #006EB070;
+    --mid-blue-8: #006EB080;
+    --mid-blue-9: #006EB090;
+    --mid-blue-10: #006EB0a0;
+    --mid-blue-11: #006EB0b0;
+    --mid-blue-12: #006EB0c0;
+    --mid-blue-13: #006EB0d0;
+    --mid-blue-14: #006EB0e0;
+    --mid-blue-15: #006EB0f0;
 }
 html {
     scroll-behavior: smooth;
@@ -18,19 +81,18 @@ body {
     box-sizing: border-box;
 }
 *:focus-visible {
-    outline: var(--light-blue) 2px solid;
+    outline: var(--mid-blue) 2px solid;
     border-radius: 5px;
 }
 
 /* General */
 section {
-    padding-top: 40px;
+    padding: 40px;
     position: relative;
-    padding-inline: 40px;
 }
 .hero {
     background-color: var(--lighter-blue);
-    color: var(--navy-blue);
+    color: var(--navy);
     padding-top: 140px;
     height: 100vh;
 }
@@ -61,6 +123,7 @@ a {
     text-decoration: none !important;
     transition: 0.25s;
     border: 2px solid;
+    font-weight: bold;
 }
 .grid {
     display: flex;
@@ -78,19 +141,19 @@ a {
 /* Header */
 header {
     background-color: var(--lighter-blue);
-    color: var(--navy-blue);
+    color: var(--navy);
     text-align: center;
     padding-block: 20px;
 }
 header h1 {
-    color: var(--navy-blue);
+    color: var(--navy);
     font-family: arial, sans-serif;
     font-size: 30px;
     font-weight: 400;
     margin-block: 0;
 }
 header h3 {
-    color: var(--navy-blue);
+    color: var(--navy);
     font-family: arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -109,7 +172,7 @@ nav > * {
     border-radius: 10px;
 }
 nav > *:hover {
-    background-color: var(--navy-blue);
+    background-color: var(--navy);
     color: var(--lighter-blue);
     cursor: pointer;
 }
@@ -143,7 +206,7 @@ footer .rails {
     transform: rotate(200deg);
 }
 .rails #rail1 {
-    background-color: var(--navy-blue);
+    background-color: var(--navy);
     width: 100%;
     height: 20%;
     position: absolute;
@@ -151,7 +214,7 @@ footer .rails {
     left: 0;
 }
 .rails #rail2 {
-    background-color: var(--navy-blue);
+    background-color: var(--navy);
     width: 100%;
     height: 20%;
     position: absolute;
@@ -166,17 +229,40 @@ footer .rails {
     height: 100%;
 }
 #tracks .track {
-    background-color: var(--navy-blue);
+    background-color: var(--navy);
     width: 10px;
     height: 100%;
     position: absolute;
     top: 0;
 }
 
+/* img text */
+.img_text {
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    line-height: 25.2px;
+    padding-block: 40px;
+}
+.img_text div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.img_text div > p {
+    margin: 0;
+}
+.img_text div > * {
+    padding: 15px 0 15px 30px;
+}
+.img_text div > img {
+    width: 60%
+}
+
 /* Footer */
 footer {
     background-color: var(--lighter-blue);
-    color: var(--navy-blue);
+    color: var(--navy);
     text-transform: uppercase;
     font-family: arial, sans-serif;
     font-size: 13px;

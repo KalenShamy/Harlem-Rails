@@ -6,11 +6,11 @@
         <h3>The CSS FIRST Robotics Team</h3>
     </a>
     <nav>
-        <a href="./">Home</a>
-        <a href="./#sponsors">Sponsors</a>
-        <a href="./#contact">Contact</a>
-        <a href="./team">Team</a>
-        <a href="./outreach">Outreach</a>
+        <a href="../">Home</a>
+        <a href="../#sponsors">Sponsors</a>
+        <a href="../#contact">Contact</a>
+        <a href="../team">Team</a>
+        <a href="../outreach">Outreach</a>
     </nav>
     <div class="rails">
         <div id="rail1"></div>
