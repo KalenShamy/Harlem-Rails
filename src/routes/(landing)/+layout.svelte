@@ -23,10 +23,6 @@
             }
         });
 
-        //rail1Tween.set(-100);
-        //rail2Tween.set(100);
-        //tracksTween.set(100);
-
         function createTracks() {
             if (rail1 && rail2 && tracks && lastCount !== count) {
                 tracks.innerHTML = "";
@@ -72,8 +68,45 @@
         let lastTrack = 0;
 
         window.addEventListener("scroll", moveRails);
+
+        const updateNav = () => {
+            if (window.scrollY > 1) {
+                document.getElementsByTagName('nav')[0].classList.add('scrolled');
+            } else {
+                document.getElementsByTagName('nav')[0].classList.remove('scrolled');
+            }
+            if (document.getElementsByClassName('hero')[0].getBoundingClientRect().y < -100) {
+                document.getElementsByTagName('nav')[0].classList.add('scrolled2');
+            } else {
+                document.getElementsByTagName('nav')[0].classList.remove('scrolled2');
+            }
+        };
+        
+        window.addEventListener("scroll", updateNav);
+        updateNav();
     });
 </script>
+
+
+<nav>
+    <h1>Harlem Rails</h1>
+    <div class="links">
+        <a href="./">Home</a>
+        <a href="./#sponsors">Sponsors</a>
+        <a href="./#contact">Contact</a>
+        <a href="./team">Team</a>
+        <a href="./outreach">Outreach</a>
+    </div>
+    <div class="rails">
+        <div id="rail1"></div>
+        <div id="rail2"></div>
+        <div id="tracks">
+            {#each Array(50) as _, i}
+                <div class="track" style="left: {i * 40 + 20}px"></div>
+            {/each}
+        </div>
+    </div>
+</nav>
 
 <section class="hero">
     <img src="images/hero_background.jpg" alt="">

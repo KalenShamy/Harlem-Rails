@@ -97,7 +97,6 @@
             <img src="images/Columbia_University.png" alt="">
         </a>
     </div>
-    <a href="outreach" class="OpacityLink">Outreach</a>
 </section>
 <section id="contact">
     <h2>Get in Touch</h2>
