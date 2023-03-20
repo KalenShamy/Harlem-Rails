@@ -162,7 +162,7 @@ header h3 {
 }
 
 nav {
-    overflow-y: hidden;
+    overflow: hidden;
 
     position: absolute;
     top: 0;
@@ -191,7 +191,7 @@ nav.scrolled {
     padding-bottom: 45px;
 }
 nav.scrolled .links {
-    right: 30px;
+    right: 0;
     transform: translate(0, -50%);
 }
 nav .links {
@@ -201,15 +201,14 @@ nav .links {
     justify-content: space-between;
     z-index: 1;
     position: absolute;
-    right: 50%;
+    right: calc(50% - min(250px, 50vw));
     top: 30px;
-    transform: translate(50%, -50%);
-    transition: 0.5s transform, 0.5s right;
-    margin-left: 30px;
+    padding-inline: 30px;
+    transition: 0.5s right;
     width: 500px;
     max-width: -moz-available;
+    max-width: -moz-available;
     max-width: -webkit-fill-available;
-    max-width: available;
 }
 nav a {
     margin-top: 0;
@@ -243,6 +242,11 @@ nav.scrolled .rails {
         font-weight: normal;
         top: 15px;
         color: var(--navy);
+    }
+}
+@media screen and (max-width: 799px) {
+    nav.scrolled2 .links {
+        right: calc(50% - min(250px, 50vw)) !important;
     }
 }
 
