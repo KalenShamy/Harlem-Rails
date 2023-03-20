@@ -71,7 +71,7 @@
 <section class="img_text">
     <h2>What is the FIRST Robotics Competition?</h2>
     <div>
-        <img src="images/robot_work.jpg" alt="">
+        <img src="images/robot_work.webp" alt="">
         <p>
             The <a href="https://www.firstchampionship.org/" target="_blank">FIRST Robotics Competition</a> (FRC) is an
             international high school robotics competition that involves students in a demanding and competitive real-world
@@ -91,10 +91,10 @@
     </p>
     <div class="grid">
         <a href="https://www.bloomberg.com/company/press/bloomberg-supports-teams-first-robotics-competition/" target="_blank" rel="noreferrer">
-            <img src="images/Bloomberg.png" alt="">
+            <img src="images/Bloomberg.webp" alt="">
         </a>
         <a href="https://outreach.engineering.columbia.edu/content/columbias-first-robotics-team" target="_blank" rel="noreferrer">
-            <img src="images/Columbia_University.png" alt="">
+            <img src="images/Columbia_University.webp" alt="">
         </a>
     </div>
 </section>

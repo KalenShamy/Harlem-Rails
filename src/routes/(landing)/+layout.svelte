@@ -109,7 +109,7 @@
 </nav>
 
 <section class="hero">
-    <img src="images/hero_background.jpg" alt="">
+    <img src="images/hero_background.webp" alt="">
     <h1>Harlem Rails</h1>
     <h3>The Columbia Secondary School FIRST Robotics Team</h3>
     <a href="team" class="OpacityLink">Meet the Team</a>
