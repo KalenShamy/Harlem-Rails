@@ -152,20 +152,16 @@
                 image: "images/team/Reuben_Bridges.webp"
             },
             {
-                name: "Graeme Ferguson",
-                image: "images/team/Graeme_Ferguson.webp"
-            },
-            {
                 name: "Mohith Manohar",
                 image: "images/team/Mohith_Manohar.webp"
             },
             {
                 name: "Olivia O'Driscoll",
-                image: "images/team/Olivia_O'Driscoll.webp"
+                image: "images/team/Olivia_ODriscoll.webp"
             },
             {
-                name: "Joel Roderiguez",
-                image: "images/team/Joel_Roderiguez.webp"
+                name: "Joel Rodriguez",
+                image: "images/team/Joel_Rodriguez.webp"
             },
             {
                 name: "Bob Stark",
@@ -174,20 +170,17 @@
             {
                 name: "Emily Yin",
                 image: "images/team/Emily_Yin.webp"
-            },
-            {
-                name: "Yuheng Zhang",
-                image: "images/team/Yuheng_Zhang.webp"
             }
         ]
     }
 </script>
 
 <section>
-    <h2>Meet the Students</h2>
+    <h2>Meet the Crew</h2>
     <div class="grid team">
         {#each team.students as student}
             <div>
+                <div class="gradient"></div>
                 <img src={student.image} alt="">
                 <h3>{student.name}</h3>
             </div>
@@ -195,10 +188,11 @@
     </div>
 </section>
 <section>
-    <h2>Meet the Mentors</h2>
+    <h2>Meet our Mentors</h2>
     <div class="grid team">
         {#each team.mentors as student}
             <div>
+                <div class="gradient"></div>
                 <img src={student.image} alt="">
                 <h3>{student.name}</h3>
             </div>
