@@ -102,6 +102,10 @@
                 image: "images/team/Lisa_Reinaudi-Monzier.webp"
             },
             {
+                name: "Lenin Rosario",
+                image: "images/team/Lenin_Rosario.webp"
+            },
+            {
                 name: "Ezra Roseman",
                 image: "images/team/Ezra_Roseman.webp"
             },
@@ -128,6 +132,10 @@
             {
                 name: "Dorian St Plice",
                 image: "images/team/Dorian_St_Plice.webp"
+            },
+            {
+                name: "Eliah Tapia",
+                image: "images/team/Eliah_Tapia.webp"
             },
             {
                 name: "Miles Thurnherr",
