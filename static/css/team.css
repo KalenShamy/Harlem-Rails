@@ -1,3 +1,10 @@
+header {
+    background-color: var(--navy);
+    color: var(--lighter-blue);
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+
 section {
     background-color: var(--navy);
     color: var(--lighter-blue);
@@ -27,16 +34,12 @@ section:last-of-type {
 
 .grid.team > div > h3 {
     color: var(--lighter-blue);
-    text-shadow:
-        -1px -1px 0 var(--navy),  
-        1px -1px 0 var(--navy),
-        -1px 1px 0 var(--navy),
-        1px 1px 0 var(--navy);
     position: absolute;
     bottom: 15px;
     left: 50%;
+    margin: 0;
     transform: translateX(-50%);
-    white-space: nowrap;
+    font-size: 28px;
     z-index: 2;
 }
 
@@ -53,6 +56,41 @@ section:last-of-type {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #0000 0%, #0008 100%);
+    background: linear-gradient(180deg, #0000 0%, #000a 100%);
     z-index: 1;
+}
+
+.grid.team > div > h4 {
+    color: white;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 14px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.grid.team > div > .corner {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    object-fit: fill;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.grid.team > div > h5 {
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 2;
 }

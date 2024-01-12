@@ -68,49 +68,81 @@
     const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 </script>
 
-<section class="img_text">
-    <h2>What is the FIRST Robotics Competition?</h2>
-    <div>
-        <img src="images/robot_work.webp" alt="">
+<section>
+    <h2><span>&gt;</span> Who are we?</h2>
+    <p>
+        The Harlem Rails is a team of passionate young scholars at Columbia Secondary School. We build robots to compete in the FIRST Robotics Competition (FRC) every year, learning time-management, communication, and teamwork.
+    </p>
+</section>
+<section>
+    <h2><span>&gt;</span> What is FIRST?</h2>
+    <p>
+        FIRST is an international non-profit youth organization that operates FRC. FIRST’s mission is to educate young students to realize their power to build a better future through technology. Each season of FRC, teams are given only six weeks to design, manufacture, assemble, program, and test a robot to compete in a new game. If a team performs well enough at regional competitions, they move on to the World Championship, where they compete against the best of the best.
+    </p>
+</section>
+<section>
+    <h2><span>&gt;</span> Our 2023 Robot</h2>
+    <div class="robot">
+        <div>
+            <h3>Meet Nakji!</h3>
+            <img src="images/robots/2023.webp" alt="Our 2023 Season FRC Robot">
+        </div>
         <p>
-            The <a href="https://www.firstchampionship.org/" target="_blank">FIRST Robotics Competition</a> (FRC) is an
-            international high school robotics competition that involves students in a demanding and competitive real-world
-            engineering project. Each year, teams are given six weeks to plan and construct a robot to compete in a
-            brand-new FIRST game. FRC supports volunteer mentors who may help lead the students through the design and
-            build process. In addition to teaching children valuable life skills, the tournament gives students practical
-            experience in engineering, computer programming, and other STEM subjects.
-            <a href="https://www.firstinspires.org/robotics/frc" target="_blank" class="OpacityLink">Learn More</a>
+            We built Nakji for the 2023 Season FRC game, CHARGED UP. CHARGED UP required a robot that could pick up cones and cubes, and place them in a grid to score points. This was our rookie season, and we participated in the NYC Regional Week 6, placing 32nd of 50 teams. We won rookie inspiration award, and look forward to using what we learned to do even better next year!
         </p>
     </div>
 </section>
-<section id="sponsors">
-    <h2>Meet our Sponsors</h2>
-    <p>
-        We are grateful for the support of our sponsors. Without them, we would not be able to compete in the FIRST Robotics Competition.
-        We are also thankful for the support of our community, who helped us raise over $5,000.
-    </p>
-    <div class="grid">
-        <a href="https://www.bloomberg.com/company/press/bloomberg-supports-teams-first-robotics-competition/" target="_blank" rel="noreferrer">
-            <img src="images/Bloomberg.webp" alt="">
-        </a>
-        <a href="https://outreach.engineering.columbia.edu/content/columbias-first-robotics-team" target="_blank" rel="noreferrer">
-            <img src="images/Columbia_University.webp" alt="">
-        </a>
+<section>
+    <h2><span>&gt;</span> Our Sponsors</h2>
+    <div class="sponsors">
+        <div class="blue">
+            <img src="images/sponsors/Columbia.webp" alt="Columbia University Logo">
+            <div>
+                <h3>Columbia University</h3>
+                <p>We greatly appreciate Columbia’s support, that provided us with mentors and an engineering lab.</p>
+                <h4>Blue Sponsor</h4>
+            </div>
+        </div>
+        <div class="silver">
+            <img src="images/sponsors/Bloomberg.webp" alt="Bloomberg Logo">
+            <div>
+                <h3>Bloomberg</h3>
+                <p>With the help of Bloomberg’s support, we registered for the FRC of the 2023 season.</p>
+                <h4>Silver Sponsor</h4>
+            </div>
+        </div>
     </div>
 </section>
+<section>
+    <h2><span>&gt;</span> Outreach Events</h2>
+    <div class="outreach">
+        <!--<div class="silver">
+            <img src="images/outreach/Event.webp" alt="Event">
+            <div>
+                <h3>Event Title</h3>
+                <p>On 02/31/24, we will be at LOCATION, showcasing our robot from the 2024 season to AUDIENCE.</p>
+                <h4>Upcoming...</h4>
+            </div>
+        </div>-->
+        <div class="blue" style="height: auto;">
+            <div>
+                <h3 style="margin: 20px;color: var(--navy);">None yet... check back again soon!</h3>
+            </div>
+        </div>
+</section>
 <section id="contact">
-    <h2>Get in Touch</h2>
+    <h2><span>&gt;</span> Contact Us</h2>
     <form method="POST" bind:this={formObject}>
         <input type="hidden" name="access_key" value="be4e03a9-5da0-49c7-8a95-ac7bce7c18f3">
         <input type="hidden" name="subject" value="Harlem Rails Contact Form Submission">
 
-        <label for="name">Name *</label>
+        <label for="name">Your Name</label>
         <input name="name" id="name" type="text" bind:value={form.name} on:input={checkInputs} required>
 
-        <label for="email">Email *</label>
+        <label for="email">Your Email</label>
         <input name="email" id="email" type="email" bind:value={form.email} on:input={checkInputs} required>
 
-        <label for="message">Message *</label>
+        <label for="message">Message</label>
         <textarea name="message" id="message" rows=6 bind:value={form.message} on:input={checkInputs} required/>
 
         <button type="button" disabled={!inputsValid} on:click={submit}>Send</button>
@@ -124,15 +156,6 @@
                 <h1>Oops, something went wrong</h1>
                 <h3>Please try again later</h3>
             {/if}
-        </div>
-        <div class="rails">
-            <div id="rail1"></div>
-            <div id="rail2"></div>
-            <div id="tracks">
-                {#each Array(100) as _, i}
-                    <div class="track" style="left: {i * 40 + 20}px"></div>
-                {/each}
-            </div>
         </div>
     </div>
 </section>
