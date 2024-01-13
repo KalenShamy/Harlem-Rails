@@ -11,8 +11,18 @@
                 group: "Electronics"
             },
             {
+                name: "Seojin An",
+                image: "images/team/Seojin_An.webp",
+                group: "CAD Design"
+            },
+            {
                 name: "Farhan Arshad",
                 image: "images/team/Farhan_Arshad.webp",
+                group: "Coding"
+            },
+            {
+                name: "Patrick Bell",
+                image: "images/team/Patrick_Bell.webp",
                 group: "Coding"
             },
             {
@@ -66,6 +76,11 @@
                 group: "Electronics"
             },
             {
+                name: "Killyan Garcia-Barrantes",
+                image: "images/team/Killyan_Garcia-Barrantes.webp",
+                group: "Electronics"
+            },
+            {
                 name: "David Gelpi",
                 image: "images/team/David_Gelpi.webp",
                 group: "Coding"
@@ -79,6 +94,16 @@
                 name: "Ezra Ju",
                 image: "images/team/Ezra_Ju.webp",
                 group: "Coding"
+            },
+            {
+                name: "Tayeba Kafil",
+                image: "images/team/Tayeba_Kafil.webp",
+                group: "CAD Design"
+            },
+            {
+                name: "Xavier Lyons",
+                image: "images/team/Xavier_Lyons.webp",
+                group: "Electronics"
             },
             {
                 name: "Thomas Manning",
@@ -111,10 +136,20 @@
                 group: "Machining"
             },
             {
+                name: "Saraf Ohi",
+                image: "images/team/Saraf_Ohi.webp",
+                group: "Machining"
+            },
+            {
                 name: "Seiji Onuma",
                 image: "images/team/Seiji_Onuma.webp",
                 group: "Machining Lead",
                 red: true
+            },
+            {
+                name: "Matthew Otoo",
+                image: "images/team/Matthew_Otoo.webp",
+                group: "Electronics"
             },
             {
                 name: "Jackson Park",
@@ -159,7 +194,7 @@
             {
                 name: "Sabiq Saif",
                 image: "images/team/Sabiq_Saif.webp",
-                group: "Coding"
+                group: "Machining"
             },
             {
                 name: "Kalen Shamy",
@@ -187,10 +222,30 @@
                 group: "Electronics"
             },
             {
+                name: "Hasti Tajbakhsh",
+                image: "images/team/Hasti_Tajbakhsh.webp",
+                group: "Electronics"
+            },
+            {
                 name: "Miles Thurnherr",
                 image: "images/team/Miles_Thurnherr.webp",
                 group: "CAD Lead",
                 red: true
+            },
+            {
+                name: "Ben Trinquier",
+                image: "images/team/Ben_Trinquier.webp",
+                group: "Coding"
+            },
+            {
+                name: "Daniel Trinquier",
+                image: "images/team/Daniel_Trinquier.webp",
+                group: "Coding"
+            },
+            {
+                name: "Abukhayer Waliuzzaman",
+                image: "images/team/Abukhayer_Waliuzzaman.webp",
+                group: "Electronics"
             },
             {
                 name: "Aurelia Wiggins",
