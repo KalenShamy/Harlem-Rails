@@ -6,19 +6,9 @@
     const team = {
         students: [
             {
-                name: "Redwan Ali",
-                image: "images/team/Redwan_Ali.webp",
-                group: "Electronics"
-            },
-            {
                 name: "Seojin An",
                 image: "images/team/Seojin_An.webp",
                 group: "CAD Design"
-            },
-            {
-                name: "Farhan Arshad",
-                image: "images/team/Farhan_Arshad.webp",
-                group: "Coding"
             },
             {
                 name: "Patrick Bell",
@@ -46,16 +36,6 @@
                 group: "Electronics"
             },
             {
-                name: "Kadmiel Clydemiclat",
-                image: "images/team/Kadmiel_Clydemiclat.webp",
-                group: "Electronics"
-            },
-            {
-                name: "Piper Cohen",
-                image: "images/team/Piper_Cohen.webp",
-                group: "Electronics"
-            },
-            {
                 name: "Grace Columbia",
                 image: "images/team/Grace_Columbia.webp",
                 group: "Coding"
@@ -64,11 +44,6 @@
                 name: "Lila Dorsett",
                 image: "images/team/Lila_Dorsett.webp",
                 group: "Machining"
-            },
-            {
-                name: "Evan Dyke",
-                image: "images/team/Evan_Dyke.webp",
-                group: "Electronics"
             },
             {
                 name: "Brianna Eugenio",
@@ -93,7 +68,8 @@
             {
                 name: "Ezra Ju",
                 image: "images/team/Ezra_Ju.webp",
-                group: "Coding"
+                group: "Coding",
+                red: true
             },
             {
                 name: "Tayeba Kafil",
@@ -101,34 +77,20 @@
                 group: "CAD Design"
             },
             {
-                name: "Xavier Lyons",
-                image: "images/team/Xavier_Lyons.webp",
-                group: "Electronics"
-            },
-            {
                 name: "Thomas Manning",
                 image: "images/team/Thomas_Manning.webp",
-                group: "Machining"
+                group: "Machining",
+                red: true
             },
             {
                 name: "Eva Marmolejos",
                 image: "images/team/Eva_Marmolejos.webp",
                 group: "Coding"
             },
-            /*{ MIGHT JOIN IN DECEMBER???
-                name: "Enzo Martinez",
-                image: "images/team/Enzo_Martinez.webp",
-                group: ""
-            },*/
             {
                 name: "Alexander Milenkovic",
                 image: "images/team/Alexander_Milenkovic.webp",
                 group: "CAD Design"
-            },
-            {
-                name: "Elias Navarro",
-                image: "images/team/Elias_Navarro.webp",
-                group: "Machining"
             },
             {
                 name: "Audrey Ng",
@@ -147,11 +109,6 @@
                 red: true
             },
             {
-                name: "Matthew Otoo",
-                image: "images/team/Matthew_Otoo.webp",
-                group: "Electronics"
-            },
-            {
                 name: "Jackson Park",
                 image: "images/team/Jackson_Park.webp",
                 group: "Machining"
@@ -162,11 +119,6 @@
                 group: "Coding"
             },
             {
-                name: "Storm Peterson",
-                image: "images/team/Storm_Peterson.webp",
-                group: "Machining"
-            },
-            {
                 name: "Thahera Rahman",
                 image: "images/team/Thahera_Rahman.webp",
                 group: "Machining"
@@ -175,11 +127,6 @@
                 name: "Lisa Reinaudi-Monzier",
                 image: "images/team/Lisa_Reinaudi-Monzier.webp",
                 group: "Electronics"
-            },
-            {
-                name: "Arianny Rodriguez",
-                image: "images/team/Arianny_Rodriguez.webp",
-                group: "Machining"
             },
             {
                 name: "Lewis Rosario",
@@ -199,7 +146,8 @@
             {
                 name: "Kalen Shamy",
                 image: "images/team/Kalen_Shamy.webp",
-                group: "Coding"
+                group: "Coding",
+                red: true
             },
             {
                 name: "Theodore Sia",
@@ -210,11 +158,6 @@
                 name: "Marcus Singer",
                 image: "images/team/Marcus_Singer.webp",
                 group: "Electronics"
-            },
-            {
-                name: "Andrew Song",
-                image: "images/team/Andrew_Song.webp",
-                group: "Coding"
             },
             {
                 name: "Dorian St Plice",
@@ -248,25 +191,22 @@
                 group: "Electronics"
             },
             {
-                name: "Aurelia Wiggins",
-                image: "images/team/Aurelia_Wiggins.webp",
-                group: "CAD Design"
-            },
-            {
-                name: "David Yanowitch",
-                image: "images/team/David_Yanowitch.webp",
-                group: "CAD Design"
-            },
-            {
                 name: "Xuyin Zhong",
                 image: "images/team/Xuyin_Zhong.webp",
-                group: "Machining"
+                group: "Machining",
+                red: true
             },
         ],
         mentors: [
             {
-                name: "Haden Leary",
-                image: "images/team/Haden_Leary.webp",
+                name: "Aiden Ankrum",
+                image: "images/team/Aiden_Ankrum.webp",
+                title: "Machining Lead",
+                red: true
+            },
+            {
+                name: "Sophia Hann",
+                image: "images/team/Sophia_Hann.webp",
                 title: "Machining"
             },
             {

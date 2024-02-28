@@ -71,13 +71,20 @@
 <section>
     <h2><span>&gt;</span> Who are we?</h2>
     <p>
-        The Harlem Rails is a team of passionate young scholars at Columbia Secondary School. We build robots to compete in the FIRST Robotics Competition (FRC) every year, learning time-management, communication, and teamwork.
+        The Harlem Rails is a team of passionate young scholars at Columbia Secondary School.
+        We build robots to compete in the FIRST Robotics Competition (FRC) every year, learning
+        time-management, communication, and teamwork.
     </p>
 </section>
 <section>
     <h2><span>&gt;</span> What is FIRST?</h2>
     <p>
-        FIRST is an international non-profit youth organization that operates FRC. FIRST’s mission is to educate young students to realize their power to build a better future through technology. Each season of FRC, teams are given only six weeks to design, manufacture, assemble, program, and test a robot to compete in a new game. If a team performs well enough at regional competitions, they move on to the World Championship, where they compete against the best of the best.
+        FIRST is an international non-profit youth organization that operates FRC. FIRST’s mission
+        is to educate young students to realize their power to build a better future through
+        technology. Each season of FRC, teams are given only six weeks to design, manufacture,
+        assemble, program, and test a robot to compete in a new game. If a team performs well
+        enough at regional competitions, they move on to the World Championship, where they compete
+        against the best of the best.
     </p>
 </section>
 <section>
@@ -88,7 +95,11 @@
             <img src="images/robots/2023.webp" alt="Our 2023 Season FRC Robot">
         </div>
         <p>
-            We built Nakji for the 2023 Season FRC game, CHARGED UP. CHARGED UP required a robot that could pick up cones and cubes, and place them in a grid to score points. This was our rookie season, and we participated in the NYC Regional Week 6, placing 32nd of 50 teams. We won rookie inspiration award, and look forward to using what we learned to do even better next year!
+            We built Nakji for the 2023 Season FRC game, CHARGED UP. CHARGED UP required a robot that
+            could pick up cones and cubes and place them in a grid to score points. This was our
+            rookie season and we participated in the NYC Regional Week 6, placing 32nd of 50 teams.
+            We won rookie inspiration award and look forward to using what we learned to do even
+            better in 2024!
         </p>
     </div>
 </section>
@@ -104,10 +115,10 @@
             </div>
         </div>
         <div class="silver">
-            <img src="images/sponsors/Bloomberg.webp" alt="Bloomberg Logo">
+            <img src="images/sponsors/GHF.webp" alt="GHF Logo">
             <div>
-                <h3>Bloomberg</h3>
-                <p>With the help of Bloomberg’s support, we registered for the FRC of the 2023 season.</p>
+                <h3>Gene Haas Foundation</h3>
+                <p>With the help of the Gene Haas Foundation's support, we will build a swerve drivetrain to compete in the 2025 season.</p>
                 <h4>Silver Sponsor</h4>
             </div>
         </div>
