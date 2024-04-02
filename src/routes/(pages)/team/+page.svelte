@@ -8,12 +8,12 @@
             {
                 name: "Seojin An",
                 image: "images/team/Seojin_An.webp",
-                group: "CAD Design"
+                group: "Machining"
             },
             {
                 name: "Patrick Bell",
                 image: "images/team/Patrick_Bell.webp",
-                group: "Coding"
+                group: "Electronics"
             },
             {
                 name: "Aahron Berazate",
@@ -23,12 +23,12 @@
             {
                 name: "Gabriel Brazil",
                 image: "images/team/Gabriel_Brazil.webp",
-                group: "CAD Design"
+                group: "Machining"
             },
             {
                 name: "Edmund Chamberlain",
                 image: "images/team/Edmund_Chamberlain.webp",
-                group: "CAD Design"
+                group: "Electronics"
             },
             {
                 name: "Saul Chambers",
@@ -73,7 +73,7 @@
             {
                 name: "Tayeba Kafil",
                 image: "images/team/Tayeba_Kafil.webp",
-                group: "CAD Design"
+                group: "Machining"
             },
             {
                 name: "Thomas Manning",
@@ -124,7 +124,7 @@
             {
                 name: "Lewis Rosario",
                 image: "images/team/Lewis_Rosario.webp",
-                group: "Coding"
+                group: "Electronics"
             },
             {
                 name: "Ezra Roseman",

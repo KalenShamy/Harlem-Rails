@@ -1,6 +1,5 @@
 /* hero */
 .hero {
-    background-color: var(--lighter-blue);
     color: var(--dark-main);
     padding-top: 140px;
     height: 100vh;
@@ -139,13 +138,13 @@
     font-size: 24px;
 }
 
-.blue {
+.red {
     background-color: var(--light);
 }
 
-.blue h4 {
+.red h4 {
     color: var(--pop);
-    text-shadow: 4px 4px 4px rgba(56, 108, 229, 0.25);
+    text-shadow: 4px 4px 4px rgba(255, 46, 46, 0.25);
 }
 
 .silver {
@@ -266,7 +265,7 @@ form button:not(:disabled):hover {
     font-size: min(3vw, 20px);
 }
 .formCompleted h1, .formCompleted h3 {
-    color: var(--lighter-blue) !important;
+    color: var(white) !important;
     font-weight: 400;
     margin-block: 0.25em;
     white-space: nowrap;

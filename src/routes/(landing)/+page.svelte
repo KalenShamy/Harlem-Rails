@@ -107,12 +107,12 @@
 <section>
     <h2><span>&gt;</span> Our Sponsors</h2>
     <div class="sponsors">
-        <div class="blue">
+        <div class="red">
             <img src="images/sponsors/Columbia.webp" alt="Columbia University Logo">
             <div>
                 <h3>Columbia University</h3>
                 <p>We greatly appreciate Columbia’s support, that provided us with mentors and an engineering lab.</p>
-                <h4>Blue Sponsor</h4>
+                <h4>Red Sponsor</h4>
             </div>
         </div>
         <div class="silver">
@@ -136,7 +136,7 @@
                 <h4>Upcoming...</h4>
             </div>
         </div>-->
-        <div class="blue" style="height: auto;">
+        <div class="red" style="height: auto;">
             <div>
                 <h3 style="margin: 20px;color: var(--dark-main);">None yet... check back again soon!</h3>
             </div>

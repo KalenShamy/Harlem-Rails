@@ -2,8 +2,8 @@
 :root {
     --dark-main: #000000;
 
-    --pop: #ff2e2e;
-    --light: #ffb3b3;
+    --pop: #FF2E2E;
+    --light: #FFB3B3;
 
     --gray: #666666;
     --mid-gray: #737373;
@@ -28,7 +28,7 @@ body {
     box-sizing: border-box;
 }
 *:focus-visible {
-    outline: var(--mid-blue) 2px solid;
+    outline: var(--pop) 2px solid;
     border-radius: 5px;
 }
 
