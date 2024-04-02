@@ -1,9 +1,9 @@
 /* Top Level */
 :root {
-    --navy: #00071A;
+    --dark-main: #000000;
 
-    --pop-blue: #386BE5;
-    --light-blue: #BBCDF6;
+    --pop: #ff2e2e;
+    --light: #ffb3b3;
 
     --gray: #666666;
     --mid-gray: #737373;
@@ -19,7 +19,7 @@ html {
     width: 100vw;
 }
 body {
-    background-color: var(--navy);
+    background-color: var(--dark-main);
     color: white;
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -55,7 +55,7 @@ h2 {
     margin-bottom: 25px;
 }
 h2 span {
-    color: var(--pop-blue);
+    color: var(--pop);
 }
 p {
     line-height: 36px;

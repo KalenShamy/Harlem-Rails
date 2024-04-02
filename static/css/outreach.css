@@ -1,10 +1,10 @@
 section:nth-of-type(even) {
     background-color: var(--lighter-blue);
-    color: var(--navy);
+    color: var(--dark-main);
 }
 
 section:nth-of-type(odd) {
-    background-color: var(--navy);
+    background-color: var(--dark-main);
     color: var(--lighter-blue);
 }
 
@@ -21,7 +21,7 @@ section {
 .event {
     display: block;
     position: relative;
-    background-color: var(--navy);
+    background-color: var(--dark-main);
     color: var(--lighter-blue);
     padding: 25px;
     border-radius: 25px;
@@ -71,11 +71,11 @@ section {
 }
 
 .event:last-of-type {
-    background-color: var(--navy);
+    background-color: var(--dark-main);
 }
 .event:last-of-type:hover {
     scale: 1;
-    background-color: var(--navy-12);
+    background-color: var(--dark-main-12);
 }
 .event:last-of-type div::before {
     content: "Coming Soon...";
@@ -92,7 +92,7 @@ section {
     transition: 0.25s;
 }
 .event:last-of-type:hover div::before {
-    color: var(--navy);
+    color: var(--dark-main);
 }
 .event:last-of-type div {
     width: 100%;

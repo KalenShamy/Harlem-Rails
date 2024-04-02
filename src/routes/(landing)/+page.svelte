@@ -37,7 +37,7 @@
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-		fetch('https://api.web3forms.com/submit', {
+		/*fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,8 @@
         })
         while (success === undefined) {
             await sleep(50);
-        }
+        }*/
+        success = true;
         formObject.style.transform = "translateX(100vw)";
         formCompleted.style.width = "100%";
 	};
@@ -118,7 +119,7 @@
             <img src="images/sponsors/GHF.webp" alt="GHF Logo">
             <div>
                 <h3>Gene Haas Foundation</h3>
-                <p>With the help of the Gene Haas Foundation's support, we will build a swerve drivetrain to compete in the 2025 season.</p>
+                <p>With the help of the Gene Haas Foundation's support, look forward to building a swerve drivetrain to compete in 2025 and future seasons.</p>
                 <h4>Silver Sponsor</h4>
             </div>
         </div>
@@ -137,7 +138,7 @@
         </div>-->
         <div class="blue" style="height: auto;">
             <div>
-                <h3 style="margin: 20px;color: var(--navy);">None yet... check back again soon!</h3>
+                <h3 style="margin: 20px;color: var(--dark-main);">None yet... check back again soon!</h3>
             </div>
         </div>
 </section>
@@ -167,6 +168,7 @@
                 <h1>Oops, something went wrong</h1>
                 <h3>Please try again later</h3>
             {/if}
+            <img src="favicon.png" alt="">
         </div>
     </div>
 </section>

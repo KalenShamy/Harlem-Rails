@@ -38,7 +38,7 @@
             {
                 name: "Grace Columbia",
                 image: "images/team/Grace_Columbia.webp",
-                group: "Coding"
+                group: "Machining"
             },
             {
                 name: "Lila Dorsett",
@@ -58,7 +58,7 @@
             {
                 name: "David Gelpi",
                 image: "images/team/David_Gelpi.webp",
-                group: "Coding"
+                group: "Machining"
             },
             {
                 name: "Fernando Herrera",
@@ -68,8 +68,7 @@
             {
                 name: "Ezra Ju",
                 image: "images/team/Ezra_Ju.webp",
-                group: "Coding",
-                red: true
+                group: "Coding"
             },
             {
                 name: "Tayeba Kafil",
@@ -79,13 +78,12 @@
             {
                 name: "Thomas Manning",
                 image: "images/team/Thomas_Manning.webp",
-                group: "Machining",
-                red: true
+                group: "Machining"
             },
             {
                 name: "Eva Marmolejos",
                 image: "images/team/Eva_Marmolejos.webp",
-                group: "Coding"
+                group: "Electronics"
             },
             {
                 name: "Alexander Milenkovic",
@@ -112,11 +110,6 @@
                 name: "Jackson Park",
                 image: "images/team/Jackson_Park.webp",
                 group: "Machining"
-            },
-            {
-                name: "Bella Peoples",
-                image: "images/team/Bella_Peoples.webp",
-                group: "Coding"
             },
             {
                 name: "Thahera Rahman",
@@ -146,8 +139,7 @@
             {
                 name: "Kalen Shamy",
                 image: "images/team/Kalen_Shamy.webp",
-                group: "Coding",
-                red: true
+                group: "Coding"
             },
             {
                 name: "Theodore Sia",
@@ -176,16 +168,6 @@
                 red: true
             },
             {
-                name: "Ben Trinquier",
-                image: "images/team/Ben_Trinquier.webp",
-                group: "Coding"
-            },
-            {
-                name: "Daniel Trinquier",
-                image: "images/team/Daniel_Trinquier.webp",
-                group: "Coding"
-            },
-            {
                 name: "Abukhayer Waliuzzaman",
                 image: "images/team/Abukhayer_Waliuzzaman.webp",
                 group: "Electronics"
@@ -193,8 +175,7 @@
             {
                 name: "Xuyin Zhong",
                 image: "images/team/Xuyin_Zhong.webp",
-                group: "Machining",
-                red: true
+                group: "Machining"
             },
         ],
         mentors: [
@@ -208,6 +189,12 @@
                 name: "Sophia Hann",
                 image: "images/team/Sophia_Hann.webp",
                 title: "Machining"
+            },
+            {
+                name: "Dan Hoizner",
+                image: "images/team/Dan_Hoizner.webp",
+                title: "Coding Lead",
+                red: true
             },
             {
                 name: "Joel Rodriguez",
@@ -234,8 +221,7 @@
             {
                 name: "Emily Yin",
                 image: "images/team/Emily_Yin.webp",
-                title: "Coding Lead",
-                red: true
+                title: "Coding"
             }
         ],
         alumni: [
