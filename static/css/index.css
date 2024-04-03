@@ -100,7 +100,21 @@
 }
 
 /* sponsors */
-
+#sponsors-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#sponsors-title > a {
+    padding: 10px;
+    border-radius: 15px;
+    border: transparent 1px solid;
+    transition: .125s;
+}
+#sponsors-title > a:hover {
+    border-color: white;
+}
 .sponsors, .outreach {
     display: flex;
     flex-direction: column;

@@ -105,7 +105,10 @@
     </div>
 </section>
 <section>
-    <h2><span>&gt;</span> Our Sponsors</h2>
+    <div id="sponsors-title">
+        <h2><span>&gt;</span> Our Sponsors</h2>
+        <a href="SponsorshipPacket.pdf" target="_blank">Sponsorship Information Packet</a>
+    </div>
     <div class="sponsors">
         <div class="red">
             <img src="images/sponsors/Columbia.webp" alt="Columbia University Logo">
@@ -119,14 +122,14 @@
             <img src="images/sponsors/GHF.webp" alt="GHF Logo">
             <div>
                 <h3>Gene Haas Foundation</h3>
-                <p>With the help of the Gene Haas Foundation's support, look forward to building a swerve drivetrain to compete in 2025 and future seasons.</p>
+                <p>With the help of the Gene Haas Foundation's support, we look forward to developing a swerve system to compete in 2025 and future seasons.</p>
                 <h4>Silver Sponsor</h4>
             </div>
         </div>
     </div>
 </section>
 <section>
-    <h2><span>&gt;</span> Outreach Events</h2>
+    <h2><span>&gt;</span> Outreach</h2>
     <div class="outreach">
         <!--<div class="silver">
             <img src="images/outreach/Event.webp" alt="Event">
