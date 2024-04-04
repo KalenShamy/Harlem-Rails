@@ -27,9 +27,27 @@ body {
 * {
     box-sizing: border-box;
 }
-*:focus-visible {
+
+a:focus-visible {
     outline: var(--pop) 2px solid;
     border-radius: 5px;
+}
+
+#headerLinks {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#headerLinks > a {
+    transition: 0.25s;
+    color: white;
+    margin-right: 10px;
+}
+#headerLinks > a:hover {
+    color: var(--pop);
+}
+#headerLinks > a path {
+    fill: currentColor;
 }
 
 /* General */
