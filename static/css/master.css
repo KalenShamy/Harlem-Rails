@@ -1,9 +1,9 @@
 /* Top Level */
 :root {
-    --navy: #00071A;
+    --dark-main: #000000;
 
-    --pop-blue: #386BE5;
-    --light-blue: #BBCDF6;
+    --pop: #FF2E2E;
+    --light: #FFB3B3;
 
     --gray: #666666;
     --mid-gray: #737373;
@@ -19,7 +19,7 @@ html {
     width: 100vw;
 }
 body {
-    background-color: var(--navy);
+    background-color: var(--dark-main);
     color: white;
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -27,9 +27,27 @@ body {
 * {
     box-sizing: border-box;
 }
-*:focus-visible {
-    outline: var(--mid-blue) 2px solid;
+
+a:focus-visible {
+    outline: var(--pop) 2px solid;
     border-radius: 5px;
+}
+
+#headerLinks {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#headerLinks > a {
+    transition: 0.25s;
+    color: white;
+    margin-right: 10px;
+}
+#headerLinks > a:hover {
+    color: var(--pop);
+}
+#headerLinks > a path {
+    fill: currentColor;
 }
 
 /* General */
@@ -55,7 +73,7 @@ h2 {
     margin-bottom: 25px;
 }
 h2 span {
-    color: var(--pop-blue);
+    color: var(--pop);
 }
 p {
     line-height: 36px;

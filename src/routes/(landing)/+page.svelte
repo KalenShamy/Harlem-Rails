@@ -61,6 +61,7 @@
         while (success === undefined) {
             await sleep(50);
         }
+        success = true;
         formObject.style.transform = "translateX(100vw)";
         formCompleted.style.width = "100%";
 	};
@@ -104,28 +105,31 @@
     </div>
 </section>
 <section>
-    <h2><span>&gt;</span> Our Sponsors</h2>
+    <div id="sponsors-title">
+        <h2><span>&gt;</span> Our Sponsors</h2>
+        <a href="SponsorshipPacket.pdf" target="_blank">Sponsorship Information Packet</a>
+    </div>
     <div class="sponsors">
-        <div class="blue">
+        <div class="red">
             <img src="images/sponsors/Columbia.webp" alt="Columbia University Logo">
             <div>
                 <h3>Columbia University</h3>
                 <p>We greatly appreciate Columbia’s support, that provided us with mentors and an engineering lab.</p>
-                <h4>Blue Sponsor</h4>
+                <h4>Red Sponsor</h4>
             </div>
         </div>
         <div class="silver">
             <img src="images/sponsors/GHF.webp" alt="GHF Logo">
             <div>
                 <h3>Gene Haas Foundation</h3>
-                <p>With the help of the Gene Haas Foundation's support, we will build a swerve drivetrain to compete in the 2025 season.</p>
+                <p>With the help of the Gene Haas Foundation's support, we look forward to developing a swerve system to compete in 2025 and future seasons.</p>
                 <h4>Silver Sponsor</h4>
             </div>
         </div>
     </div>
 </section>
 <section>
-    <h2><span>&gt;</span> Outreach Events</h2>
+    <h2><span>&gt;</span> Outreach</h2>
     <div class="outreach">
         <!--<div class="silver">
             <img src="images/outreach/Event.webp" alt="Event">
@@ -135,16 +139,16 @@
                 <h4>Upcoming...</h4>
             </div>
         </div>-->
-        <div class="blue" style="height: auto;">
+        <div class="red" style="height: auto;">
             <div>
-                <h3 style="margin: 20px;color: var(--navy);">None yet... check back again soon!</h3>
+                <h3 style="margin: 20px;color: var(--dark-main);">None yet... check back again soon!</h3>
             </div>
         </div>
 </section>
 <section id="contact">
     <h2><span>&gt;</span> Contact Us</h2>
     <form method="POST" bind:this={formObject}>
-        <input type="hidden" name="access_key" value="be4e03a9-5da0-49c7-8a95-ac7bce7c18f3">
+        <input type="hidden" name="access_key" value="5ba9a855-f892-41ad-adfc-fb83240d7b4b">
         <input type="hidden" name="subject" value="Harlem Rails Contact Form Submission">
 
         <label for="name">Your Name</label>
@@ -167,6 +171,7 @@
                 <h1>Oops, something went wrong</h1>
                 <h3>Please try again later</h3>
             {/if}
+            <img src="favicon.png" alt="">
         </div>
     </div>
 </section>
