@@ -37,7 +37,7 @@
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-		/*fetch('https://api.web3forms.com/submit', {
+		fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@
         })
         while (success === undefined) {
             await sleep(50);
-        }*/
+        }
         success = true;
         formObject.style.transform = "translateX(100vw)";
         formCompleted.style.width = "100%";
