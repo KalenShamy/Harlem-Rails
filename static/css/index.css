@@ -74,8 +74,8 @@
     text-align: center;
 }
 .robot img {
-    width: calc(50vw - 25px);
-    max-width: min(405px, 100%);
+    width: calc(50vw - 50px);
+    max-width: 405px;
 }
 
 /* Mobile */
@@ -88,6 +88,7 @@
     }
     .robot img {
         width: calc(100vw - 25px);
+        max-width: min(405px, 100%) !important;
     }
     .sponsors > div, .outreach > div {
         flex-direction: column;
