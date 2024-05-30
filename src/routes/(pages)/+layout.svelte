@@ -1,3 +1,7 @@
+<svelte:head>
+    <link rel="stylesheet" href="css/masterOther.css">
+</svelte:head>
+
 <header>
     <a href="./"><h1>Harlem Rails</h1></a>
     <div id="headerLinks">
